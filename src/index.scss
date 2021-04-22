@@ -12,9 +12,17 @@ code {
     monospace;
 }
 
-.component {
-  border: 1px solid black;
-  width: 300px;
-  height: 300px;
-  background-color: aquamarine;
+.App {
+  display: flex;
+  justify-content: space-evenly;
+
+  .component {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
