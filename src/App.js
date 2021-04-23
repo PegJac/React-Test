@@ -13,6 +13,17 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
+  componentDidMount() {
+    const activeState = JSON.parse(localStorage.getItem("active"))
+    this.setState({
+      active: activeState,
+    })
+  }
+
+  componentDidUpdate() {
+    localStorage.setItem("active", this.state.active)
+  }
+
   handleClick() {
     return (
       this.state.active ? this.setState({ active: false }) : this.setState({ active: true })
