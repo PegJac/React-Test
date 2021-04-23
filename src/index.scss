@@ -33,3 +33,10 @@ code {
     background-color: lightpink;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .App {
+    flex-direction: column;
+    align-items: center;
+  }
+}
