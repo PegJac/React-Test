@@ -6,7 +6,7 @@ export default class ComponentA extends Component {
             < div className={`component ${this.props.active ? "blue" : "pink"}`
             }>
                 <span className={"component_title"}> Component A </span>
-                <input className={"textInput"} onChange={this.props.renderText} placeholder="Skriv något kul!" />
+                <input className={"text_input"} onChange={this.props.renderText} />
                 <button onClick={this.props.handleClick}> Click me </button>
             </div >
         )

@@ -8,7 +8,7 @@ class App extends React.Component {
     super()
     this.state = {
       active: false,
-      text: "State text"
+      text: ""
     }
 
     this.handleClick = this.handleClick.bind(this)
